@@ -1,0 +1,21 @@
+ndvi:
+  ideal: 1.0
+  range: 0.65
+  weight: 0.5
+
+slope:
+  max_deg: 30
+  weight: 1.4
+
+elevation:
+  ideal: 300
+  range: 150
+  weight: 1.2
+
+carbon:
+  norm_div: 50
+  weight: 0.3
+
+landcover:
+  pref_classes: [40, 50, 60, 70]
+  weight: 0.4

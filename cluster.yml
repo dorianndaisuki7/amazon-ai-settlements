@@ -1,0 +1,9 @@
+# クラスタリング & GPT 用パラメータ
+proj_epsg    : 3857        # South America Albers (面積・距離両立)
+top_quantile : 0.95         # 上位20 %を対象
+eps_km       : 120      # auto → utils.suggest_eps() を使用
+min_samples  : 1
+buffer_m     : 4000        # convex_hull を 2 km 膨張
+async_workers: 3           # ＝キャラ人数
+retry_max    : 5           # GPT 429/503 時の再試行上限
+lang         : ja          # 出力言語（将来 en/jp 切替用）

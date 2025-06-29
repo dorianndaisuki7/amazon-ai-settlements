@@ -1,0 +1,21 @@
+<VRTDataset rasterXSize="33397" rasterYSize="28747">
+  <SRS dataAxisToSRSAxisMapping="2,1">GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform> -8.0000365942548115e+01,  8.9831528411952154e-04,  0.0000000000000000e+00,  5.1760926670966834e+00,  0.0000000000000000e+00, -8.9831528411952154e-04</GeoTransform>
+  <VRTRasterBand dataType="Float32" band="1">
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">ndvi_amazon_100m_part1.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="32768" RasterYSize="28747" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="32768" ySize="28747" />
+      <DstRect xOff="0" yOff="0" xSize="32768" ySize="28747" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">ndvi_amazon_100m_part2.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="629" RasterYSize="28747" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="629" ySize="28747" />
+      <DstRect xOff="32768" yOff="0" xSize="629" ySize="28747" />
+    </SimpleSource>
+  </VRTRasterBand>
+</VRTDataset>
